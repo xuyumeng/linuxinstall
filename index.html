@@ -42,11 +42,26 @@
 <h2>
 <a name="2-centos%E7%AF%87" class="anchor" href="#2-centos%E7%AF%87"><span class="octicon octicon-link"></span></a>2. Centos篇</h2>
 
+<p>注意，centos live cd做成u盘启动会出现错误，最好做minimal版，而且制作玩启动盘，要把iso文件放在U盘根目录</p>
+
 <h2>
 <a name="3-ubuntu%E7%AF%87" class="anchor" href="#3-ubuntu%E7%AF%87"><span class="octicon octicon-link"></span></a>3. Ubuntu篇</h2>
 
 <h2>
 <a name="4-fedora%E7%AF%87" class="anchor" href="#4-fedora%E7%AF%87"><span class="octicon octicon-link"></span></a>4. Fedora篇</h2>
+
+<p>Fedora制作完U盘之后，需要将isolinux 文件夹中 isolinux.cfg 和 syslinux.cfg 文件做修改</p>
+
+<pre><code>root=live:CDLABEL=Fedora-Live-Desktop-x86_64-19-1
+</code></pre>
+
+<p>改为</p>
+
+<pre><code>root=live:CDLABEL=FEDORA-19-1
+</code></pre>
+
+<p>两个文件相同，
+然后将 U 盘盘符名也改为 FEDORA-19-1</p>
       </section>
     </div>
 
